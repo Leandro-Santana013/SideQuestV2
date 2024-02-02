@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono:wght@600&display=swap');
+
+:root {
+    --verde: #3cbc8c;
+    --azul: #144474;
+    --verde-claro: #E8FFF7;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: flex;
+    width: 100vw;
+    height: 95vh;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+
+.content-midia {
+    margin-top: 6vw;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.connected-bar {
+    display: none;
+    width: 0.5vw;
+    height: 0.5vw;
+    border-radius: 50%;
+    background-color: var(--verde);
+}
+
+.sidebarCliente {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 76vh;
+    margin-left: 14px;
+    width: 18vw;
+    margin-top: 7.5vw;
+    position: fixed;
+    font-size: 1vw;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+}
+ .sidebarCliente a{
+    text-decoration: none;
+    color: black;
+}
+
+.option {
+    display: flex;
+    flex-direction: row;
+    gap: 0.8vw;
+    align-items: center;
+    cursor:pointer;
+    width: fit-content;
+    
+}
+.option i{
+    font-size: 1.2vw;
+}
+
+header {
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    flex-grow: 1;
+    height: 5vw;
+}
+
+header .img-logo {
+    width: 8vw;
+    height: auto;
+    margin-left: 3vw;
+}
+
+.notificacao i {
+    font-size: 2vW;
+    color: #3cbc8c;
+    transition: 0.25s ease-in-out;
+    margin-right: 3vw;
+}
+
+.notificacao i:hover {
+    color: #144474;
+}

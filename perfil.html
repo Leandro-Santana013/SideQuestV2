@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar (Android only) -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>SideQuest</title>
+
+    <!-- CSS PERSONALIZADO-->
+    <link rel="stylesheet" href="css/perfil.css">
+    <link rel="stylesheet" href="css/global.css">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <img class="img-logo" src="./img/logo_SideQuest.png" alt="Logo do SideQuest">
+        <div class="notificacao">
+            <i class="fa-solid fa-bell"></i>
+        </div>
+    </header>
+
+
+    <nav class="sidebarCliente">
+        <div class="options">
+            <a href="homeCliente.html" class="option">
+                <div class="connected-bar"></div>
+                <i class="fa-solid fa-house"></i>
+                <p>Início</p>
+            </a>
+
+            <a href="perfil.html" class="option">
+                <div class="connected-bar"></div>
+                <i class="fa-regular fa-user"></i>
+                <p>Perfil</p>
+            </a>
+            <a href="chats.html" class="option">
+                <div class="connected-bar"></div>
+                <i class="fa-regular fa-comments"></i>
+                <p>Chats</p>
+            </a>
+            <a href="favoritos.html" class="option">
+                <div class="connected-bar"></div>
+                <i class="fa-regular fa-star"></i>
+                <p>Favoritos</p>
+            </a>
+            <a href="historico.html" class="option">
+                <div class="connected-bar"></div>
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                <p>Histórico</p>
+            </a>
+            <a href="pagamentos.html" class="option">
+                <div class="connected-bar"></div>
+                <i class="fa-solid fa-hand-holding-dollar"></i>
+                <p>Pagamentos</p>
+            </a>
+        </div>
+        <a href="config.html" class="config">
+            <div class="option">
+                <div class="connected-bar"></div>
+                <i class="fa-solid fa-gear"></i>
+                <p>Configurações</p>
+            </div>
+        </a>
+    </nav>
+
+    <div class="content-midia">
+        <div class="perfilbox">
+            <div class="header-perfil">
+                <div class="perfil-client">
+                    <img class="img-perfil" src="./img/icone-perfil.png">
+                    <h2>Nome</h2>
+                </div>
+                <button>
+                    <h3>editar</h3>
+                </button>
+            </div>
+            <hr>
+            <div class="details">
+
+                <h3>Detalhes</h3>
+                <div class="name">
+                    <div class="char">
+                        <p>nome</p>
+                        <div class="name-content">
+                            <p>Default</p>
+                        </div>
+                    </div>
+
+                    <div class="char">
+                        <p>sobrenome</p>
+                        <div class="name-content">
+                            <p>Default</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="contact">
+
+                    <div class="char">
+                        <p>email</p>
+                        <div class="contact-content">
+                            <p></p>
+                        </div>
+                    </div>
+
+                    <div class="char">
+                        <p>Endereço</p>
+                        <div class="contact-content">
+                            <p></p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="cordova.js"></script>
+        <script src="js/index.js"></script>
+
+</body>
+
+</html>

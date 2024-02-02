@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; 
+             style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; 
+             font-src 'self' https://fonts.gstatic.com data:; 
+             script-src 'self' 'unsafe-eval' https://cdn.jsdelivr.net;
+              script-src 'self' 'unsafe-eval' https://cdn.jsdelivr.net">-->
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+  <title>SideQuest</title>
+</head>
+
+<body>
+  <header>
+    <img class="img-logo" src="img/logo_SideQuest.png" alt="Logo do SideQuest">
+    <nav>
+      <ul class="t1">
+        <li><a href="">Encontrar serviços</a></li>
+        <li><a href="">Trabalhe conosco</a></li>
+      </ul>
+      <ul class="t2">
+        <li><a>Login</a></li>
+        <li class="btn-insc"><a href="cadastro.html" class="tab-link link">inscreva-se</a></li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <div class="banner">
+    <div class="left-banner">
+      <div class="text-input">
+        <h1>Enco ntre os melhores <strong>profissionais</strong> para <br>sua <strong>residência</strong> aqui!
+        </h1>
+        <div class="content-input">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="busque por serviços" />
+          <button class="btn-encontrar">encontrar</button>
+        </div>
+      </div>
+      <img class="img-banner" src="img/ftbanner.png" alt="furadeira">
+    </div>
+  </div>
+
+  <section class="swippers">
+    <div class="header-siwpper">
+      <h2>Principais <strong>serviços</strong></h2>
+      <div class="btns-swipper">
+        <div class="swiper-button-prev btn-swipper"></div>
+        <div class="swiper-button-next btn-swipper"></div>
+      </div>
+    </div>
+    <div class="carrossel">
+      <div class="left-carrossel">
+        <div class="tipos-serviço">
+          <div class="carrossel-btn" id="carrossel-btn1">
+            <p id="carrossel-palavra1" onclick="showCarrossel(1)">Eletrica</p>
+          </div>
+          <div class="carrossel-btn" id="carrossel-btn2">
+            <p id="carrossel-palavra2" onclick="showCarrossel(2)">Pintura</p>
+          </div>
+          <div class="carrossel-btn" id="carrossel-btn3">
+            <p id="carrossel-palavra3" onclick="showCarrossel(3)">Encanamento</p>
+          </div>
+          <div class="carrossel-btn" id="carrossel-btn4">
+            <p id="carrossel-palavra4" onclick="showCarrossel(4)">Carpintaria</p>
+          </div>
+          <div class="carrossel-btn" id="carrossel-btn5">
+            <p id="carrossel-palavra5" onclick="showCarrossel(5)">Outros</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper mySwiper" id="carrossel1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card-carrossel">
+              <img src="img/pintor.png" alt="Pintor">
+              <p>Pintura de parede</p>
+              <div class="btn-buscar"><a href="">Buscar</a></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-carrossel">
+              <img src="img/pintor.png" alt="Pintor">
+              <p>Pintura de parede</p>
+              <div class="btn-buscar"><a href="">Buscar</a></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-carrossel">
+              <img src="img/pintor.png" alt="Pintor">
+              <p>Pintura de parede</p>
+              <div class="btn-buscar"><a href="">Buscar</a></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-carrossel">
+              <img src="img/pintor.png" alt="Pintor">
+              <p>Pintura de parede</p>
+              <div class="btn-buscar"><a href="">Buscar</a></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-carrossel">
+              <img src="img/pintor.png" alt="Pintor">
+              <p>Pintura de parede</p>
+              <div class="btn-buscar"><a href="">Buscar</a></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-carrossel">
+              <img src="img/pintor.png" alt="Pintor">
+              <p>Pintura de parede</p>
+              <div class="btn-buscar"><a href="">Buscar</a></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-carrossel">
+              <img src="img/pintor.png" alt="Pintor">
+              <p>Pintura de parede</p>
+              <div class="btn-buscar"><a href="">Buscar</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <div class="swiper mySwiper" id="carrossel2" style="display: none;">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card-carrossel">
+              <img src="img/pintor.png" alt="Pintor">
+              <p>Eletricista</p>
+              <div class="btn-buscar"><a href="">Buscar</a></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-carrossel">
+              <img src="img/pintor.png" alt="Pintor">
+              <p>Pintura de parede</p>
+              <div class="btn-buscar"><a href="">Buscar</a></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-carrossel">
+              <img src="img/pintor.png" alt="Pintor">
+              <p>Pintura de parede</p>
+              <div class="btn-buscar"><a href="">Buscar</a></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-carrossel">
+              <img src="img/pintor.png" alt="Pintor">
+              <p>Pintura de parede</p>
+              <div class="btn-buscar"><a href="">Buscar</a></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-carrossel">
+              <img src="img/pintor.png" alt="Pintor">
+              <p>Pintura de parede</p>
+              <div class="btn-buscar"><a href="">Buscar</a></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-carrossel">
+              <img src="img/pintor.png" alt="Pintor">
+              <p>Pintura de parede</p>
+              <div class="btn-buscar"><a href="">Buscar</a></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-carrossel">
+              <img src="img/pintor.png" alt="Pintor">
+              <p>Pintura de parede</p>
+              <div class="btn-buscar"><a href="">Buscar</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <div class="swiper mySwiper" id="carrossel3" style="display: none;">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card-carrossel">
+              <img src="img/pintor.png" alt="Pintor">
+              <p>Eletricista</p>
+              <div class="btn-buscar"><a href="">Buscar</a></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-carrossel">
+              <img src="img/pintor.png" alt="Pintor">
+              <p>Pintura de parede</p>
+              <div class="btn-buscar"><a href="">Buscar</a></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-carrossel">
+              <img src="img/pintor.png" alt="Pintor">
+              <p>Pintura de parede</p>
+              <div class="btn-buscar"><a href="">Buscar</a></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-carrossel">
+              <img src="img/pintor.png" alt="Pintor">
+              <p>Pintura de parede</p>
+              <div class="btn-buscar"><a href="">Buscar</a></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-carrossel">
+              <img src="img/pintor.png" alt="Pintor">
+              <p>Pintura de parede</p>
+              <div class="btn-buscar"><a href="">Buscar</a></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-carrossel">
+              <img src="img/pintor.png" alt="Pintor">
+              <p>Pintura de parede</p>
+              <div class="btn-buscar"><a href="">Buscar</a></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-carrossel">
+              <img src="img/pintor.png" alt="Pintor">
+              <p>Pintura de parede</p>
+              <div class="btn-buscar"><a href="">Buscar</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <div class="swiper mySwiper" id="carrossel4" style="display: none;">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card-carrossel">
+              <img src="img/pintor.png" alt="Pintor">
+              <p>Eletricista</p>
+              <div class="btn-buscar"><a href="">Buscar</a></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-carrossel">
+              <img src="img/pintor.png" alt="Pintor">
+              <p>Pintura de parede</p>
+              <div class="btn-buscar"><a href="">Buscar</a></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-carrossel">
+              <img src="img/pintor.png" alt="Pintor">
+              <p>Pintura de parede</p>
+              <div class="btn-buscar"><a href="">Buscar</a></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-carrossel">
+              <img src="img/pintor.png" alt="Pintor">
+              <p>Pintura de parede</p>
+              <div class="btn-buscar"><a href="">Buscar</a></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-carrossel">
+              <img src="img/pintor.png" alt="Pintor">
+              <p>Pintura de parede</p>
+              <div class="btn-buscar"><a href="">Buscar</a></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-carrossel">
+              <img src="img/pintor.png" alt="Pintor">
+              <p>Pintura de parede</p>
+              <div class="btn-buscar"><a href="">Buscar</a></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-carrossel">
+              <img src="img/pintor.png" alt="Pintor">
+              <p>Pintura de parede</p>
+              <div class="btn-buscar"><a href="">Buscar</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <div class="swiper mySwiper" id="carrossel5" style="display: none;">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card-carrossel">
+              <img src="img/pintor.png" alt="Pintor">
+              <p>Eletricista</p>
+              <div class="btn-buscar"><a href="">Buscar</a></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-carrossel">
+              <img src="img/pintor.png" alt="Pintor">
+              <p>Pintura de parede</p>
+              <div class="btn-buscar"><a href="">Buscar</a></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-carrossel">
+              <img src="img/pintor.png" alt="Pintor">
+              <p>Pintura de parede</p>
+              <div class="btn-buscar"><a href="">Buscar</a></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-carrossel">
+              <img src="img/pintor.png" alt="Pintor">
+              <p>Pintura de parede</p>
+              <div class="btn-buscar"><a href="">Buscar</a></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-carrossel">
+              <img src="img/pintor.png" alt="Pintor">
+              <p>Pintura de parede</p>
+              <div class="btn-buscar"><a href="">Buscar</a></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-carrossel">
+              <img src="img/pintor.png" alt="Pintor">
+              <p>Pintura de parede</p>
+              <div class="btn-buscar"><a href="">Buscar</a></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-carrossel">
+              <img src="img/pintor.png" alt="Pintor">
+              <p>Pintura de parede</p>
+              <div class="btn-buscar"><a href="">Buscar</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="beneficios">
+    <h3>Principais benefícios</h3>
+    <div class="animation1">
+
+      <div class="hidden">
+        <div class="card"><img src="img/Review.png" class="review">
+          <h2>Profissionais avaliados pela comunidade.</h1>
+        </div>
+      </div>
+      <div class="hidden">
+        <img src="img/calendario.png" class="agenda">
+        <h2>Agende serviços <br>Facilmente</h2>
+      </div>
+      <div class="hidden">
+        <img src="img/high_five.png" class="high-five">
+        <h2>Sua casa em boas mãos!</h2>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="animation2">
+    <div class="poster">
+      <div class="hidden1"><img class="inner-img-ani1" src="img/triangulo-animation2.png" alt=""></div>
+      <div class="hidden1"><img class="inner-img-ani2" src="img/substitutir.png" alt=""></div>
+    </div>
+    <div class="conteudo-animation2">
+      <div class="hidden1">
+        <h2>O que é a SideQuest?</h2>
+      </div>
+      <div class="hidden1">
+        <p>É uma plataforma inovadora onde é possível encontrar os melhores talentos locais para cuidar da sua
+          casa com confiança e comodidade.</p>
+      </div>
+      <div class="hidden1"><a class="encontrar-pro" href="" id="hoverazul">Encontre Profissionais</a></div>
+    </div>
+  </section>
+
+  <footer>
+    <img src="img/logo_SideQuest.png" alt="logo da SideQuest">
+
+    <div class="termos">
+      <h6>Termos</h6>
+      <a>Termos de uso</a>
+      <a>Política de privacidade</a>
+    </div>
+    <div class="sobre">
+      <h6>Sobre</h6>
+      <a>Sobre nós</a>
+      <a>Equipe SideQuest</a>
+    </div>
+  </footer>
+
+  <script src="cordova.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/swipper.js"></script>
+
+</body>
+
+</html>

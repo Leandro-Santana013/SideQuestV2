@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar (Android only) -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>SideQuest</title>
+
+    <!-- CSS PERSONALIZADO PARA MENU-->
+    <link rel="stylesheet" href="css/homePageCliente.css">
+    <link rel="stylesheet" href="css/global.css">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="css/remixicons/remixicon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <img class="img-logo" src="./img/logo_SideQuest.png" alt="Logo do SideQuest">
+        <div class="notificacao">
+            <i class="fa-solid fa-bell"></i>
+        </div>
+    </header>
+
+    <nav class="sidebarCliente">
+        <div class="options">
+            <a href="homeCliente.html" class="option">
+                <div class="connected-bar"></div>
+                <i class="fa-solid fa-house"></i>
+                <p>Início</p>
+            </a>
+
+            <a href="perfil.html" class="option">
+                <div class="connected-bar"></div>
+                <i class="fa-regular fa-user"></i>
+                <p>Perfil</p>
+            </a>
+            <a href="chats.html" class="option">
+                <div class="connected-bar"></div>
+                <i class="fa-regular fa-comments"></i>
+                <p>Chats</p>
+            </a>
+            <a href="favoritos.html" class="option">
+                <div class="connected-bar"></div>
+                <i class="fa-regular fa-star"></i>
+                <p>Favoritos</p>
+            </a>
+            <a href="historico.html" class="option">
+                <div class="connected-bar"></div>
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                <p>Histórico</p>
+            </a>
+            <a href="pagamentos.html" class="option">
+                <div class="connected-bar"></div>
+                <i class="fa-solid fa-hand-holding-dollar"></i>
+                <p>Pagamentos</p>
+            </a>
+        </div>
+        <a href="config.html" class="config">
+            <div class="option">
+                <div class="connected-bar"></div>
+                <i class="fa-solid fa-gear"></i>
+                <p>Configurações</p>
+            </div>
+        </a>
+    </nav>
+
+    <div class="content-midia">
+        <div class="menu-profissionais">
+            <div class="menu-topo">
+                <div class="actions">
+                    <div class="info-action">
+                        <p>Adicionar serviço</p>
+                        <div class="action">
+                            <p>Publique um serviço e receba orçamentos</p>
+                            <img src="./img/aproved.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="actions">
+                    <div class="info-action">
+                        <p>Serviços Ativos</p>
+                        <div class="action">
+                            <p>Você possui 3 serviços ativos</p>
+                            <img src="./img/reload.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="actions">
+                    <div class="info-action">
+                        <p>Serviços Pendentes</p>
+                        <div class="action">
+                            <p>Vizualize os serviços pendentes</p>
+                            <img src="./img/calendario1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h1>Encontre os melhores profissionais para seu problema</h1>
+
+
+            <div class="input-filtros">
+                <div class="content-input">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="busque por serviços" />
+                </div>
+                <div class="filtros">
+                    <p>Filtros</p>
+                    <i class="fa-solid fa-sliders"></i>
+                </div>
+            </div>
+
+            <section class="area-servicos">
+                <div class="card-servico">
+                    <div class="tamplate-img">
+                        <img src="img/icone-perfil.png" alt="Imagem de perfil">
+                    </div>
+                    <div class="desc-cliente">
+                        <div class="perfil-avaliado">
+                            <h2>Default<h2>
+                            <div class="stars">
+                                <i class="ri-star-s-fill ava"></i>
+                                <i class="ri-star-s-fill ava"></i>
+                                <i class="ri-star-s-fill ava"></i>
+                                <i class="ri-star-s-fill ava"></i>
+                                <i class="ri-star-s-fill"></i>
+                            </div>
+                        </div>
+                        <div class="emblemas">
+                            <img src="img/medalha10k.png" alt="Medalha 10k">
+                            <img src="img/medalhaouro.png" alt="Medalha de Ouro">
+                            <img src="img/medelhabronze.png" alt="Medalha de Bronze">
+                        </div>
+                        <div class="content-desc">
+                            <p class="desc" id="maix">
+                                Eu sou um eletricista formado pela FATEC e tenho 5 anos de experiência em instalações
+                                elétricas e manutenção. Sou especializado em reparos elétricos residenciais e
+                                comerciais,
+                                incluindo a instalação de novos sistemas elétricos, reparos de fiação e iluminação.
+                            </p>
+                            <span class="vma-vme" onclick="verMaisEMenos()">ver mais</span>
+                        </div>
+                    </div>
+                    <div class="contrate">
+                        <button class="btn-contratar">Contratar</button>
+                        <div class="serv-realizados">
+                            <img src="./img/certificado.png" alt="certificado">
+                            <p>Serviços realizados: 964984</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+
+    <script src="cordova.js">
+    </script>
+    <script src="js/index.js">
+    </script>
+
+</body>
+
+</html>
