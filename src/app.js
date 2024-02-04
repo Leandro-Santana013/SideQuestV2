@@ -14,7 +14,10 @@ app.use('/', router);
     console.error(`Erro ao conectar ao MySQL: ${error}`);
   }
 
-  app.listen(5000, () => {
-    console.log('Servidor rodando na porta 5000');
-  });
+ 
+  const port = process.env.PORT || 3000;
+app.listen(port, () => {
+  console.log(`Server running on port ${port}`);
+});
+
 })();
