@@ -12,9 +12,10 @@ async function connect() {
         host: process.env.DATABASE_HOST,
         user: process.env.DATABASE_USER,
         password: process.env.DATABASE_PASSWORD,
-        database: process.env.DATABASE
-    });
-    global.connection = connection;
+        database: process.env.DATABASE,
+        port: process.env.PORT
+        });
+    global.connection = connection;     
     return connection;
 }
 
