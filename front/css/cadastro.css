@@ -49,8 +49,17 @@ body {
 
 .campos {
     display: flex;
-    flex-direction: column;
+   justify-content: center;
     align-items: center;
+    flex-direction: column;
+    
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 0.2vw;
+    }
 
     h2 {
         color: var(--azul);

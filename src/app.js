@@ -1,10 +1,13 @@
 // app.js
 const app = require('./config/express');
 const db = require('./database/db');
-const router = require('./routes/routes'); // Renomeei de Router para router
+const view = require('./routes/pages');
+const authController = require ('./routes/auth');
 
-// Configuração das rotas
-app.use('/', router);
+
+app.use('/auth', authController);  // Use o roteador de auth.js para '/register' primeiro
+app.use('/', view);    // Em seguida, use o roteador de pages.js para o caminho raiz
+
 
 (async () => {
   try {
@@ -14,7 +17,6 @@ app.use('/', router);
     console.error(`Erro ao conectar ao MySQL: ${error}`);
   }
 
- 
   const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);

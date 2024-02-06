@@ -1,4 +1,21 @@
 
+document.addEventListener('deviceready', onDeviceReady, false);
+
+function onDeviceReady() {
+    // Cordova is now initialized. Have fun!
+
+    console.log('Running cordova-' + cordova.platformId + '@' + cordova.version);
+    document.getElementById('deviceready').classList.add('ready');
+}
+
+
+
+document.addEventListener('deviceready', onDeviceReady, false);
+
+function onDeviceReady() {
+    console.log('Running cordova-' + cordova.platformId + '@' + cordova.version);
+    document.getElementById('deviceready').classList.add('ready');
+}
 
 
 const tela = new IntersectionObserver((entradas) => {
@@ -81,3 +98,10 @@ function showCarrossel(carrosselNumber) {
         }
     }
 }
+
+document.getElementById('cpfInput').addEventListener('input', (event) => {
+    let input = event.target;
+    let inputValue = input.value.replace(/\D/g, '').substring(0, 11);
+    let formattedValue = inputValue.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, '$1.$2.$3-$4');
+    input.value = formattedValue;
+});
