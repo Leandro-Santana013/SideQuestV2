@@ -9,13 +9,15 @@ async function connect() {
         return global.connection;
 
     const connection = await mysql.createConnection({
-        host: process.env.DATABASE_HOST,
-        user: process.env.DATABASE_USER,
-        password: process.env.DATABASE_PASSWORD,
-        database: process.env.DATABASE
+        host: "localhost",
+        user: "root",
+        password: "terceqsedis",
+        database: "db_sidequest",
+       
         });
     global.connection = connection;     
     return connection;
 }
 
 module.exports = { connect };
+

@@ -5,6 +5,7 @@ const view = require('./routes/pages');
 const authController = require ('./routes/auth');
 
 
+
 app.use('/auth', authController);  // Use o roteador de auth.js para '/register' primeiro
 app.use('/', view);    // Em seguida, use o roteador de pages.js para o caminho raiz
 
@@ -13,13 +14,25 @@ app.use('/', view);    // Em seguida, use o roteador de pages.js para o caminho 
   try {
     await db.connect();
     console.log('Conexão com o MySQL funcionando');
+  // Execute a consulta SQL para selecionar o campo nm_cliente
+  connection.query('SELECT nm_cliente FROM tb_cliente', (error, results, fields) => {
+    if (error) {
+      console.error(`Erro ao executar consulta: ${error}`);
+      return;
+    }
+
+    // Exiba os resultados
+    console.log('Clientes:');
+    results.forEach(result => {
+      console.log(result.nm_cliente);
+    });
+  });
+
   } catch (error) {
-    console.error(`Erro ao conectar ao MySQL: ${error}`);
+    console.error(`Erro a conectar ao MySQL: ${error}`);
   }
 
-  const port = process.env.PORT || 3000;
-app.listen(port, () => {
-  console.log(`Server running on port ${port}`);
+app.listen(5000, () => {
+  console.log(`Server running on port`);
 });
-
 })();
