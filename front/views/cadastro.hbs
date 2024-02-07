@@ -55,8 +55,8 @@
                 <input placeholder="Digite seu nome" type="name" name="name"/>
                 <input placeholder="Digite seu email" type="email" name="email"/>
                 <input placeholder="Digite seu CPF" type="text" id="cpfInput" name="cpf"/>
-                <input placeholder="Digite seu nome" type="password" name="senha"/>
-                <input placeholder="Digite seu nome" type="password" name="senha"/>
+                <input placeholder="Digite uma senha" type="password" name="senha"/>
+                <input placeholder="Confirme sua senha" type="password" name="senhaConfirm"/>
                 <button  type="submit" class="btn-criar">Criar</button>
             </form>
                 <div class="entre-google">
@@ -66,5 +66,9 @@
                 </div>
             </div>
         </div>
+
+        {{#if mesage}}
+        <h4 class="erro">{{mesage}}</h4>
+        {{/if}}
         <script src="../js/index.js"></script>
 </body>
