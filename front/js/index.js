@@ -105,3 +105,4 @@ document.getElementById('cpfInput').addEventListener('input', (event) => {
     let formattedValue = inputValue.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, '$1.$2.$3-$4');
     input.value = formattedValue;
 });
+

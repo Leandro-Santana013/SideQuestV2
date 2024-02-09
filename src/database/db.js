@@ -12,12 +12,21 @@ async function connect() {
         host: "localhost",
         user: "root",
         password: "terceqsedis",
-        database: "db_sidequest",
-       
-        });
-    global.connection = connection;     
+        database: "db_sidequest"
+    });
+
+    connection.connect((err) => {
+        if (err) {
+            console.error(`Erro ao conectar ao MySQL: ${err}`);
+            throw err;
+        }
+        console.log('Conexão com o MySQL funcionando');
+    });
+
+    global.connection = connection;
     return connection;
 }
+
 
 module.exports = { connect };
 
