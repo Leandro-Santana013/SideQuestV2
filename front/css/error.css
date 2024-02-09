@@ -1,0 +1,56 @@
+:root {
+    --verde: #3cbc8c;
+    --azul: #144474;
+    --verde-claro: #d4ffef;
+}
+
+
+body{
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.message h3{
+    font-size: 5vw;
+    color: var(--verde);
+    font-weight: 800;
+    margin: 0;
+}
+
+.message h4 {
+    font-size: 1vw;
+    color: var(--azul);
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6vw;
+    height: 3vw;
+    border-radius: 6px;
+    background-color: var(--verde);
+    font-weight: 200;
+    transition: 0.25s ease-in-out;
+    border: none;
+    color: white;
+}
+
+button:hover{
+    background-color: var(--azul);
+
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 0.8vw;
+}

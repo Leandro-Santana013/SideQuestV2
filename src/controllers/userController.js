@@ -11,7 +11,7 @@ exports.register = (req, res) => {
   connection.query("SELECT cd_emailCliente FROM tb_cliente WHERE cd_emailCliente = ?", [email], async (error, results) => {
       if (error) {
           console.log(error);
-          return res.status(500).send('Erro interno no servidor');
+          return res.status(500).send('/error404');
       }
       
       if (results.length > 0) {

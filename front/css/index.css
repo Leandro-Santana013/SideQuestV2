@@ -378,6 +378,10 @@ ul.t2 a {
     align-items: center;
 }
 
+.swiper-wrapper{
+    height: 120% !important;
+}
+
 .swiper {
     width: 100%;
     height: 100%;

@@ -34,4 +34,8 @@ router.get('/conversas', (req, res) => {
   res.render("conversas");
 });
 
+router.get('/error404', (req, res) => {
+  res.render("error404");
+});
+
 module.exports = router;  
