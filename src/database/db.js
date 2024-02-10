@@ -2,7 +2,7 @@
 const mysql = require("mysql");
 const dotenv = require('dotenv');
 
-dotenv.config({ path: './.env'});
+dotenv.config({ path: '../.env'});
 
 async function connect() {
     if (global.connection && global.connection.state !== "disconnected")

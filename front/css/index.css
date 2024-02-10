@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono:wght@600&display=swap');
 
+.modalClose {
+    display: none;
+    position: fixed;
+    top: 50;
+    right: 50;
+    width: 500px;
+    height: 500px;
+    background-color: var(--azul);
+}
 :root {
     --verde: #3cbc8c;
     --azul: #144474;
