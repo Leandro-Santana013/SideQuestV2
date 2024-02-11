@@ -10,6 +10,11 @@ router.get('/cadastro', (req, res) => {
   res.render("cadastro");
 });
 
+router.get('/login', (req, res) => {
+  res.render("login");
+});
+
+
 router.get('/favoritos', (req, res) => {
   res.render("favoritos");
 });
