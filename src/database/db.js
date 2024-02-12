@@ -11,7 +11,7 @@ async function connect() {
     const connection = await mysql.createConnection({
         host: "localhost",
         user: "root",
-        password: "SideQuest",
+        password: "terceqsedis",
         database: "db_sidequest"
     });
 

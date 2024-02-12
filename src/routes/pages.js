@@ -35,12 +35,14 @@ router.get('/historico', (req, res) => {
   res.render("historico");
 });
 
-router.get('/conversas', (req, res) => {
-  res.render("conversas");
-});
-
 router.get('/error404', (req, res) => {
   res.render("error404");
 });
+
+router.get('/confirmarEmail', (req, res) => {
+  res.render("confirmarEmail");
+});
+
+
 
 module.exports = router;  
