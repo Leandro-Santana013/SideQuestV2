@@ -39,9 +39,19 @@ router.get('/error404', (req, res) => {
   res.render("error404");
 });
 
+router.get('/homeProfissional', (req, res) => {
+  res.render("homeProfissional");
+});
+
 router.get('/confirmarEmail', (req, res) => {
   res.render("confirmarEmail");
 });
+
+router.get('/visualizarServico', (req, res) => {
+  res.render("visualizarServico");
+});
+
+
 
 
 
