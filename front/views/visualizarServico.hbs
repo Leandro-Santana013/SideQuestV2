@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS PERSONALIZADO PARA MENU-->
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/visualizarServico.css">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="css/remixicons/remixicon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>SideQuest</title>
+</head>
+<body>
+    <header>
+        <img class="img-logo" src="../img/logo_SideQuest.png" alt="Logo do SideQuest">
+        <div class="notificacao">
+            <i class="fa-solid fa-bell"></i>
+        </div>
+    </header>
+
+    <nav class="sidebarCliente">
+        <div class="options">
+            <a href="/homeCliente" class="option">
+                <div class="connected-bar"></div>
+                <i class="fa-solid fa-house"></i>
+                <p>Início</p>
+            </a>
+
+            <a href="/perfil" class="option">
+                <div class="connected-bar"></div>
+                <i class="fa-regular fa-user"></i>
+                <p>Perfil</p>
+            </a>
+            <a href="/chats" class="option">
+                <div class="connected-bar"></div>
+                <i class="fa-regular fa-comments"></i>
+                <p>Chats</p>
+            </a>
+            <a href="/favoritos" class="option">
+                <div class="connected-bar"></div>
+                <i class="fa-regular fa-star"></i>
+                <p>Favoritos</p>
+            </a>
+            <a href="/historico" class="option">
+                <div class="connected-bar"></div>
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                <p>Histórico</p>
+            </a>
+            <a href="/pagamentos" class="option">
+                <div class="connected-bar"></div>
+                <i class="fa-solid fa-hand-holding-dollar"></i>
+                <p>Pagamentos</p>
+            </a>
+        </div>
+        <a href="/config" class="config">
+            <div class="option">
+                <div class="connected-bar"></div>
+                <i class="fa-solid fa-gear"></i>
+                <p>Configurações</p>
+            </div>
+        </a>
+    </nav>
+
+        <div class="content-midia">
+            <div class="vizuPedido">
+                <div class="cabecalho-pedido">
+                    <h1>Pintura de Parede 4M²</h1>
+                    <div class="preco-pedido">
+                        <h2>Pintura</h2>
+                        <button>R$450</button>
+                    </div>
+                </div>
+                <hr id="linha-cabecalho">
+                <div class="descricao">
+                    <div class="btn-Usuario">
+                        
+                            <button>Aceitar</button>
+                            <button>Fazer proposta</button>
+                        
+                        <div class="usuario-desc">
+                            <img src="../img/icone-perfil.png" alt="icone perfil" id="perfil">
+                            <div class="nome">
+                                <p>Joao Silva</p>
+                                <div class="avaliacao">
+                                    <p>4.9</p>
+                                    <img src="../img/Group 7.png" alt="estrelas" id="estrela">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="distancia">
+                            <img src="../img/Address 1.png" alt="endereco">
+                            <p>2km</p>
+                        </div>
+                    </div>
+                    <div class="desc-tempo-perdido">
+                        <h2>Descrição</h2>
+                        <p>Preciso de uma pintura bem feita em uma parede de 4m². Quero um serviço de qualidade e sem fazer muita sujeira. O serviço deve ser concluido em no máximo 2 dias.</p>
+                        <div class="tempo-pedido">
+                            <div class="tempo-inicio">
+                                <img src="../img/botao-play.png" alt="botão play">
+                                <p>Início: 14/09/2023</p>
+                            </div>
+                            <div class="tempo-fim">
+                                <img src="../img/bandeira 1.png" alt="bandeira de chegada">
+                                <p>Fim: 16/09/2023</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<script src="../js/index.js"></script>
+</body>
+</html>

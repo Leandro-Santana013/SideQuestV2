@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar (Android only) -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>SideQuest</title>
+
+    <!-- CSS PERSONALIZADO PARA MENU-->
+    <link rel="stylesheet" href="../css/homePage.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="css/remixicons/remixicon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <img class="img-logo" src="../img/logo_SideQuest.png" alt="Logo do SideQuest">
+        <div class="notificacao">
+            <i class="fa-solid fa-bell"></i>
+        </div>
+    </header>
+
+    <nav class="sidebarCliente">
+        <div class="options">
+            <a href="/homeCliente" class="option">
+                <div class="connected-bar"></div>
+                <i class="fa-solid fa-house"></i>
+                <p>Início</p>
+            </a>
+
+            <a href="/perfil" class="option">
+                <div class="connected-bar"></div>
+                <i class="fa-regular fa-user"></i>
+                <p>Perfil</p>
+            </a>
+            <a href="/chats" class="option">
+                <div class="connected-bar"></div>
+                <i class="fa-regular fa-comments"></i>
+                <p>Chats</p>
+            </a>
+            <a href="/favoritos" class="option">
+                <div class="connected-bar"></div>
+                <i class="fa-regular fa-star"></i>
+                <p>Favoritos</p>
+            </a>
+            <a href="/historico" class="option">
+                <div class="connected-bar"></div>
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                <p>Histórico</p>
+            </a>
+            <a href="/pagamentos" class="option">
+                <div class="connected-bar"></div>
+                <i class="fa-solid fa-hand-holding-dollar"></i>
+                <p>Pagamentos</p>
+            </a>
+        </div>
+        <a href="/config" class="config">
+            <div class="option">
+                <div class="connected-bar"></div>
+                <i class="fa-solid fa-gear"></i>
+                <p>Configurações</p>
+            </div>
+        </a>
+    </nav>
+
+    <div class="content-midia">
+        <div class="menu-profissionais">
+            <div class="menu-topo">
+                <div class="actions">
+                    <div class="info-action">
+                        <p>Adicionar serviço</p>
+                        <div class="action">
+                            <p>Publique um serviço e receba orçamentos</p>
+                            <img src="../img/aproved.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="actions">
+                    <div class="info-action">
+                        <p>Serviços Ativos</p>
+                        <div class="action">
+                            <p>Você possui 3 serviços ativos</p>
+                            <img src="../img/reload.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="actions">
+                    <div class="info-action">
+                        <p>Serviços Pendentes</p>
+                        <div class="action">
+                            <p>Vizualize os serviços pendentes</p>
+                            <img src="../img/calendario1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h1>Encontre os melhores profissionais para seu problema</h1>
+            
+            <div class="input-filtros">
+                <div class="content-input">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="busque por serviços" />
+                </div>
+                <div class="filtros">
+                    <p>Filtros</p>
+                    <i class="fa-solid fa-sliders"></i>
+                </div>
+            </div>
+
+
+            <section class="area-servicos">
+                <a href="/visualizarServico">
+                    <div class="card-servico">
+                    <div class="icon-sucesso">
+                        <img src="../img/sucesso 1.png" alt="icone de sucesso">
+                    </div>
+                    <div class="desc-servico-usuario">
+                        <h2>Pintura de Parede 4m²</h2>
+                        <p>A parede em questão tem aproximadamente 4 metros de largura e 2,7 metros de altura. Ela é
+                            atualmente de um tom neutro, mas quero transformá-la em um ponto de destaque na sala...
+                            <strong>Ver mais detalhes</strong></p>
+                        <div class="info-usuario">
+                            <p>Publicação: 2 Horas atrás</p>
+                            <div class="avaliacao">
+                                <img src="../img/icone-perfil.png" alt="icone perfil" id="perfil">
+                                <p>João Silva</p>
+                                <img src="../img/Star 1.png" alt="estrela" id="estrela">
+                                <p>4.9</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-distancia">
+                        <button>R$450</button>
+                        <div class="distancia">
+                            <img src="../img/Address 1.png" alt="localizacão">
+                            <p>3km</p>
+                        </div>
+                    </div>
+                    </div>
+                </a>
+
+            </section>
+        </div>
+    </div>
+
+
+
+    <script src="cordova.js">
+    </script>
+    <script src="js/index.js">
+    </script>
+
+</body>
+
+</html>
