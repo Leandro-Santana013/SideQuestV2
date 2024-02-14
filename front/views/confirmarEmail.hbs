@@ -1,29 +1,31 @@
-<!DOCTYPE html>
-<html>
+    <!DOCTYPE html>
+    <html>
 
-<head>
-    <meta charset="utf-8">
-    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; 
-             style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; 
-             font-src 'self' https://fonts.gstatic.com data:; 
-             script-src 'self' 'unsafe-eval' https://cdn.jsdelivr.net;
-              script-src 'self' 'unsafe-eval' https://cdn.jsdelivr.net">-->
-    <meta name="format-detection" content="telephone=no">
-    <meta name="msapplication-tap-highlight" content="no">
-    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
-    <link rel="stylesheet" href="/css/index.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    <link rel="stylesheet" href="/css/error.css">
+    <head>
+        <meta charset="utf-8">
+        <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; 
+                style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; 
+                font-src 'self' https://fonts.gstatic.com data:; 
+                script-src 'self' 'unsafe-eval' https://cdn.jsdelivr.net;
+                script-src 'self' 'unsafe-eval' https://cdn.jsdelivr.net">-->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <link rel="stylesheet" href="/css/index.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+        <link rel="stylesheet" href="/css/error.css">
 
-    <title>SideQuest</title>
-</head>
+        <title>SideQuest</title>
+    </head>
 
-<body>
-    <section class="message">
-        <h3>email validado</h3>
-        <button><a href="/">Voltar para o inÃ­cio</a></button>
-        {{#if message}}
-        <h4 class="erro">{{message}}</h4>
-        {{/if}}
-    </section>
-</body>
+    <body>  
+        <form action="/auth/regiter" method="get" class="message">
+            <h3>email validado</h3>
+            <button onclick="validaEmail()">CONFIRMAR TOKEN</button>
+            <a type="submit" href="/">Voltar para o ini­cio</a>
+            {{#if message}}
+            <h4 class="erro">{{message}}</h4>
+                {{/if}}
+            </form>
+
+    </body>
