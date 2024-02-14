@@ -17,14 +17,19 @@
       });
     }
 
+    let globalemail
+    let globaltoken
+
     exports.register = async (req, res) => {
 
       try {
 
         const { name, email, cpf, senha, senhaConfirm } = req.body;
         const cpfNumerico = cpf.replace(/\D/g, '');
-        modele.exports = email
+       
         const emailResults = await queryAsync("SELECT cd_emailCliente FROM tb_cliente WHERE cd_emailCliente = ?", [email]);
+
+          globalemail = email
 
         if (emailResults.length > 0) {
           return res.render('cadastro', {
@@ -49,6 +54,7 @@
 
         console.log(cpfNumerico)
         const token = tokenConfirmacao.generateEmailConfirmationToken();
+        globaltoken = token
         // Inserir novo cliente
         await queryAsync('INSERT INTO tb_cliente SET ?', { nm_cliente: name, cd_emailCliente: email, cd_cpfCliente: cpfNumerico, cd_senha: hash });
         
@@ -114,7 +120,6 @@
         var { email, senha } = req.body;
         const user = await queryAsync("SELECT * FROM tb_cliente WHERE cd_emailCliente = ?", [email]);
 
-        
 
         if (user.length === 0) {
           return res.render('login', {
@@ -147,15 +152,10 @@
 
    exports.validaEmail = async (req, res) => {
       try {
-       const email = req.query.email
-       const token = req.query.token
-console.log(email)
-console.log(token)
-  
-          
-          if (email && tokenFromURL) {
-            // Atualize o token confirmado na tabela do usuário
-            await queryAsync('UPDATE tb_cliente SET cd_token = ? WHERE cd_emailCliente = ?', [token, email]);
+        console.log(globalemail)
+          if (globalemail) {
+            
+            await queryAsync('UPDATE tb_cliente SET cd_token = ? WHERE cd_emailCliente = ?', [globaltoken, globalemail]);
             
           return res.render('confirmarEmail', {
             message: 'E-mail confirmado com sucesso!'
