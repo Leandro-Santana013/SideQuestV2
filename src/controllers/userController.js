@@ -2,6 +2,8 @@ const bcrypt = require('bcrypt');
 const nodemailer = require('nodemailer')
 const tokenConfirmacao = require('../tools/createToken')
 const smtpconfig = require('../config/smtp')
+const express = require('express')
+const router = express.Router();
 
 function queryAsync(sql, values) {
   return new Promise((resolve, reject) => {
@@ -118,21 +120,24 @@ exports.register = async (req, res) => {
 exports.login = async (req, res) => {
   try {
     var { email, senha } = req.body;
+
     const user = await queryAsync("SELECT * FROM tb_cliente WHERE cd_emailCliente = ?", [email]);
 
 
     if (user.length === 0) {
-      return res.render('login', {
-        message: 'Email ou senha incorretos'
-      });
+         return res.render("login", {
+          message: 'Email ou senha incorretos'
+          })
+
     }
 
     const match = await bcrypt.compare(senha, user[0].cd_senha);
 
     if (!match) {
-      return res.render('login', {
-        message: 'Email ou senha incorretos'
-      });
+       return res.render("login", {
+      message: 'Email ou senha incorretos'
+        });
+
     }
 
     const tokenconfirmed = await queryAsync("SELECT * FROM tb_cliente where cd_token = ? ", [user[0].cd_token])
@@ -142,7 +147,7 @@ exports.login = async (req, res) => {
       });
     }
 
-    return res.render('homeCliente');
+    return res.redirect('/homeCliente');
 
   } catch (error) {
     console.error(error);

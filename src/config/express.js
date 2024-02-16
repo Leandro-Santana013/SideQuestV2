@@ -3,17 +3,19 @@ const express = require('express');
 const path = require('path');
 const app = express();
 const session = require('express-session');
+const randomSession = require('../tools/autoToken');
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
+const secretSession = randomSession.jwtSecret;
+
 app.use(session({
-    secret: 'sua_chave_secreta_aqui',
-    resave: false,
-    saveUninitialized: true,
-    cookie: { maxAge: 60000 } // Tempo de expiração em milissegundos (1 minuto neste exemplo)
-  }));
-  
+  secret: secretSession,
+  resave: false,
+  saveUninitialized: true,
+  cookie: { maxAge: 30000 }
+}));
 
 // Configuração do diretório público
 const publicDirectory = path.join(__dirname, '../../front/');

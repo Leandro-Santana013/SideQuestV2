@@ -4,15 +4,20 @@ const router = express.Router();
 
 router.get('/', (req, res) => {
   res.render("index");
+
 });
 
 router.get('/cadastro', (req, res) => {
   res.render("cadastro");
+  
 });
 
 router.get('/login', (req, res) => {
-  res.render("login");
+  req.session.destroy
+    res.render("login");
+
 });
+
 
 
 router.get('/favoritos', (req, res) => {
@@ -21,18 +26,34 @@ router.get('/favoritos', (req, res) => {
 
 router.get('/homeCliente', (req, res) => {
   res.render("homeCliente");
+  req.session.connected = {id: 1, username: 'sessions' };
 });
 
 router.get('/perfil', (req, res) => {
+  if(req.session.connected){
   res.render("perfil");
+  } else {
+    res.redirect("login");
+    req.session.destroy;
+  }
 });
 
 router.get('/pagamentos', (req, res) => {
-  res.render("pagamentos");
+  if(req.session.connected){
+    res.render("pagamentos");
+    } else {
+      res.redirect("login");
+      req.session.destroy;
+    }
 });
 
 router.get('/historico', (req, res) => {
-  res.render("historico");
+  if(req.session.connected){
+    res.render("historico");
+    } else {
+      res.redirect("login");
+      req.session.destroy;
+    }
 });
 
 router.get('/error404', (req, res) => {
@@ -40,15 +61,30 @@ router.get('/error404', (req, res) => {
 });
 
 router.get('/homeProfissional', (req, res) => {
-  res.render("homeProfissional");
+  if(req.session.connected){
+    res.render("homeProfissional");
+    } else {
+      res.redirect("login");
+      req.session.destroy;
+    }
 });
 
 router.get('/confirmarEmail', (req, res) => {
-  res.render("confirmarEmail");
+  if(req.session.emailConrfim){
+    res.render("confirmarEmail");
+    } else {
+      res.redirect("login");
+      req.session.destroy;
+    }
 });
 
 router.get('/visualizarServico', (req, res) => {
-  res.render("visualizarServico");
+  if(req.session.connected){
+    res.render("vizualizarServico");
+    } else {
+      res.redirect("login");
+      req.session.destroy;
+    }
 });
 
 
