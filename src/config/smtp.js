@@ -1,8 +1,8 @@
 module.exports = connectmail = {
-    host: "", 
-    port: "",
-    auth: {
-        user: "", 
-        pass: ""
-      }
+  host: "smtp.office365.com", 
+  port: 587,
+  auth: {
+      user: "Sidequest.plataform@outlook.com", 
+      pass: "lmSideQuest23" 
+    }
 }

@@ -94,3 +94,246 @@ header .img-logo {
 .notificacao i:hover {
     color: #144474;
 }
+
+/*CARD*/
+
+.area-servicos {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-servico {
+    display: flex;
+    justify-content: space-around;
+    width: 55vw;
+    height: auto;
+    border: solid 1px black;
+    border-radius: 25px;
+}
+
+.tamplate-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65%;
+}
+
+.tamplate-img img {
+    width: 5vw;
+    height: 5vw;
+    border: solid 2px grey;
+    border-radius: 50%;
+}
+
+.perfil-avaliado {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.desc-cliente {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.6vw;
+}
+
+.star {
+    display: flex;
+    width: 200vw;
+}
+
+.ri-star-s-fill {
+    font-size: 1.4vw;
+    color: #d9d9d9;
+    margin: 0;
+}
+
+.ava {
+    color: var(--verde);
+}
+
+h2 {
+    margin: 0;
+}
+
+.emblemas {
+    display: flex;
+    gap: 0.8vw;
+}
+
+.content-desc {
+    height: auto;
+}
+
+.desc {
+    width: 25vw;
+    font-size: 1vw;
+    height: auto;
+}
+
+
+
+.emblemas img {
+    width: 2vw;
+    height: 2vw;
+}
+
+
+.contrate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-contratar {
+    background-color: var(--verde);
+    color: white;
+    width: 8vw;
+    font-size: 1vw;
+    height: 3vw;
+    border: none;
+    border-radius: 1vw;
+    transition: 0.25s ease-in-out;
+}
+
+.btn-contratar:hover {
+    background-color: var(--azul);
+}
+
+.serv-realizados {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    font-size: 1vw;
+}
+
+.serv-realizados img {
+    width: 30px;
+    height: 30px;
+}
+
+
+.desc {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    font-size: 1vw;
+    margin: 0;
+}
+
+.desc.expandido {
+    -webkit-line-clamp: initial;
+}
+
+
+.vma-vme {
+    cursor: pointer;
+    color: var(--azul);
+}
+
+
+/*Fazendo o card de serviço para profissionais*/
+
+.card-servicoProfissa h2 {
+    font-size: 1.4rem;
+}
+
+.card-servicoProfissa p {
+font-size: 12px;
+}
+
+.card-servicoProfissa {
+margin: 20px;
+border: 1px solid black;
+padding: 10px;
+border-radius: 10px;
+width: 52vw;
+padding-left: 0px;
+padding-top: 0px;
+height: 35vh;
+display: flex;
+justify-content: flex-start;
+
+}
+
+ .area-servicos a {
+    text-decoration: none;
+    color: black;
+    }
+
+.card-servicoProfissa .icon-sucesso {
+background-color: #3cbc8c;
+height: 8vh;
+border-top-left-radius: 10px;
+border-bottom-right-radius: 40px;
+margin-right: 5px;
+width: 5.5vw;
+}
+
+.card-servicoProfissa .icon-sucesso img {
+width: 4vw;
+height: 7vh;
+margin: 8px;
+}
+
+.card-servicoProfissa .desc-servico-usuario {
+    width: 25vw;
+    margin: 10px;
+    }
+
+
+.card-servicoProfissa .info-usuario {
+display: flex;
+flex-direction: column;
+}
+
+.card-servicoProfissa .info-usuario .avaliacao {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    }
+
+.card-servicoProfissa .info-usuario .avaliacao #perfil {
+    width: 4vw;
+    height: 7vh;
+}
+
+.card-servicoProfissa .info-usuario .avaliacao #estrela {
+width: 2vw;
+height: 3vh;
+}
+
+.card-servicoProfissa .btn-distancia {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 15vw;
+}
+
+.card-servicoProfissa .btn-distancia button {
+align-self: flex-end;
+width: 7vw;
+height: 7vh;
+border-radius: 20px;
+border: none ;
+background-color: #3cbc8c;
+color: white;
+font-weight: bolder;
+font-size: 1.2rem;
+}
+
+.card-servicoProfissa .btn-distancia .distancia {
+display: flex;
+gap: 7px;
+font-weight: bolder;
+align-items: center;
+}
+
+.card-servicoProfissa .btn-distancia .distancia p {
+    font-size: 1.3rem;
+}
+
