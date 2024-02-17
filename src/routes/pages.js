@@ -51,6 +51,10 @@ router.get('/visualizarServico', (req, res) => {
   res.render("visualizarServico");
 });
 
+router.get('/perfilProfissional', (req, res) => {
+  res.render("perfilProfissional");
+});
+
 
 
 
