@@ -91,6 +91,10 @@ router.get('/perfilProfissional', (req, res) => {
   res.render("perfilProfissional");
 });
 
+router.get('/servicosConcluidos', (req, res) => {
+  res.render("servicosConcluidos");
+});
+
 
 
 

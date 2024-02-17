@@ -337,3 +337,14 @@ align-items: center;
     font-size: 1.3rem;
 }
 
+/*Fazendo a sessao de serviços*/
+.sessao-cards {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    width: 82vw;
+}
+
+.content-midia .sessao-cards h1 {
+font-size: 1.5rem;
+}
