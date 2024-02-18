@@ -253,10 +253,8 @@ border-radius: 10px;
 width: 52vw;
 padding-left: 0px;
 padding-top: 0px;
-height: 35vh;
 display: flex;
 justify-content: flex-start;
-
 }
 
  .area-servicos a {
@@ -269,8 +267,9 @@ background-color: #3cbc8c;
 height: 8vh;
 border-top-left-radius: 10px;
 border-bottom-right-radius: 40px;
-margin-right: 5px;
-width: 5.5vw;
+padding: 9px;
+display: flex;
+align-items: center;
 }
 
 .card-servicoProfissa .icon-sucesso img {
@@ -282,6 +281,8 @@ margin: 8px;
 .card-servicoProfissa .desc-servico-usuario {
     width: 25vw;
     margin: 10px;
+    display: flex;
+    flex-direction: column;
     }
 
 
@@ -311,7 +312,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-width: 15vw;
+width: 10vw;
 }
 
 .card-servicoProfissa .btn-distancia button {
@@ -336,6 +337,33 @@ align-items: center;
 .card-servicoProfissa .btn-distancia .distancia p {
     font-size: 1.3rem;
 }
+
+
+.card-servicoProfissa .chat-cancelar {
+display: flex;
+justify-content: space-between;
+width: 30vw;
+align-items: flex-end;
+height: 7vh;
+}
+
+.card-servicoProfissa .chat-cancelar #chat {
+background-color: var(--verde);
+color: white;
+width: 7vw;
+height: 5vh;
+font-size: 1.1rem;
+border: none;
+}
+
+.card-servicoProfissa .chat-cancelar #cancelar {
+    background-color: white;
+    color: red;
+    width: 7vw;
+    height: 5vh;
+    font-size: 1.1rem;
+    border: 2px solid red;
+    }
 
 /*Fazendo a sessao de serviços*/
 .sessao-cards {

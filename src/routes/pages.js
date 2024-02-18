@@ -95,8 +95,8 @@ router.get('/servicosConcluidos', (req, res) => {
   res.render("servicosConcluidos");
 });
 
-
-
-
+router.get('/servicosAtivos', (req, res) => {
+  res.render("servicosAtivos");
+});
 
 module.exports = router;  
