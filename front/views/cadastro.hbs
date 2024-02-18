@@ -2,7 +2,7 @@
 <html>
 
 <head>
-   
+
     <meta charset="utf-8">
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; 
              style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; 
@@ -30,18 +30,26 @@
             </div>
             <div class="campos">
                 <h2>Crie sua conta!</h2>
-                <form action="/auth/register" method="post">
                 <label class="btn-slide">
-                    <input type="checkbox">
+                    <input type="checkbox" id="toggleButton" onclick="toggleForm()">
                     <span class="slider"></span>
                 </label>
-                <input placeholder="Digite seu nome" type="name" name="name"/>
-                <input placeholder="Digite seu email" type="email" name="email"/>
-                <input placeholder="Digite seu CPF" type="text" id="cpfInput" name="cpf"/>
-                <input placeholder="Digite uma senha" type="password" name="senha"/>
-                <input placeholder="Confirme sua senha" type="password" name="senhaConfirm"/>
-                <button  type="submit" class="btn-criar">Criar</button>
-            </form>
+                <form action="/auth/register" method="post" class="formCliente">
+                    <input placeholder="sexo" type="name" name="name" />
+                    <input placeholder="Digite seu email" type="email" name="email" />
+                    <input placeholder="Digite seu CPF" type="text" id="cpfInput" name="cpf" />
+                    <input placeholder="Digite uma senha" type="password" name="senha" />
+                    <input placeholder="Confirme sua senha" type="password" name="senhaConfirm" />
+                    <button type="submit" class="btn-criar">Criar</button>
+                </form>
+                <form action="/auth/registerPro" method="post" class="formProfi">
+                    <input placeholder="Digite seu nome" type="name" name="name" />
+                    <input placeholder="Digite seu email" type="email" name="email" />
+                    <input placeholder="Digite seu CPF" type="text" id="cpfInput" name="cpf" />
+                    <input placeholder="Digite uma senha" type="password" name="senha" />
+                    <input placeholder="Confirme sua senha" type="password" name="senhaConfirm" />
+                    <button type="submit" class="btn-criar">Criar</button>
+                </form>
                 <div class="entre-google">
                     <div class="linha"></div>
                     <p>ou entre com o google</p>
@@ -50,8 +58,24 @@
             </div>
         </div>
     </div>
-        {{#if message}}
-        <h4 class="erro">{{message}}</h4>
-        {{/if}}
-        <script src="../js/index.js"></script>
+    {{#if message}}
+    <h4 class="erro">{{message}}</h4>
+    {{/if}}
+    <script src="../js/index.js"></script>
+    <script>
+        function toggleForm(){
+        var formCliente = document.querySelector(".formCliente");
+        var formProfi = document.querySelector(".formProfi");
+        var toggleButton = document.getElementById("toggleButton");
+
+        if(toggleButton.checked){
+            formProfi.style.display = "flex";
+            formCliente.style.display = "none";
+        } else{
+             formProfi.style.display = "none";
+            formCliente.style.display = "flex";
+        }
+
+        }
+    </script>
 </body>
