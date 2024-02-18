@@ -103,4 +103,8 @@ router.get('/servicosAtivosProfissional', (req, res) => {
   res.render("servicosAtivosProfissional");
 });
 
+router.get('/servicosPendentesCliente', (req, res) => {
+  res.render("servicosPendentesCliente");
+});
+
 module.exports = router;  

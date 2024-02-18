@@ -1,23 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Color theme for statusbar (Android only) -->
-    <meta name="theme-color" content="#2196f3">
-    <!-- Your app title -->
-    <title>SideQuest</title>
-
     <!-- CSS PERSONALIZADO PARA MENU-->
-    <link rel="stylesheet" href="../css/servicosProfissional.css">
     <link rel="stylesheet" href="../css/global.css">
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="css/remixicons/remixicon.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>SideQuest</title>
 </head>
-
 <body>
     <header>
         <img class="img-logo" src="../img/logo_SideQuest.png" alt="Logo do SideQuest">
@@ -71,7 +63,7 @@
 
     <div class="content-midia">
         <div class="sessao-cards">
-            <h1>Serviços Ativos</h1>
+            <h1>Serviços Pendentes</h1>
             <div class="card-servicoProfissa">
                 <div class="icon-sucesso">
                     <img src="../img/sucesso1.png" alt="icone de sucesso">
@@ -82,62 +74,66 @@
                         atualmente de um tom neutro, mas quero transformá-la em um ponto de destaque na sala...
                         <strong>Ver mais detalhes</strong>
                     </p>
-                    <div class="info-usuario">
-                        <p>Início: 02/10/2023 Fim: 27/10/2023</p>
-                        <div class="avaliacao">
-                            <img src="../img/icone-perfil.png" alt="icone perfil" id="perfil">
-                            <p>João Silva</p>
-                            <i class="fa-regular fa-star"></i>
-                            <p>4.9</p>
-                        </div>
-                    </div>
-                    <div class="chat-cancelar">
-                        <button id="finalizar">Finalizar</button>
-                        <button id="chat">Chat</button>
-                        <button id="cancelar">Cancelar</button>
-                    </div>
                 </div>
-                <div class="btn-distancia">
-                    <button>R$450</button>
+                <div class="double-button">
+                    <button id="valor">R$450</button>
+                    <button id="ver-mais">Ver mais</button>
                 </div>
             </div>
 
-            <div class="card-servicoProfissa">
+             <div class="card-servicoProfissa">
                 <div class="icon-sucesso">
-                    <img src="../img/alerta.png" alt="perigo">
+                    <img src="../img/sucesso1.png" alt="icone de sucesso">
                 </div>
                 <div class="desc-servico-usuario">
-                    <h2>Troca de fiação</h2>
+                    <h2>Pintura de Parede 4m²</h2>
                     <p>A parede em questão tem aproximadamente 4 metros de largura e 2,7 metros de altura. Ela é
                         atualmente de um tom neutro, mas quero transformá-la em um ponto de destaque na sala...
                         <strong>Ver mais detalhes</strong>
                     </p>
-                    <div class="info-usuario">
-                        <p>Início: 02/10/2023  Fim: 27/10/2023</p>
-                        <div class="avaliacao">
-                            <img src="../img/icone-perfil.png" alt="icone perfil" id="perfil">
-                            <p>João Silva</p>
-                            <i class="fa-regular fa-star"></i>
-                            <p>4.9</p>
-                        </div>
-                    </div>
-                    <div class="chat-cancelar">
-                        <button id="finalizar">Finalizar</button>
-                        <button id="chat">Chat</button>
-                        <button id="cancelar">Cancelar</button>
-                    </div>
                 </div>
-                <div class="btn-distancia">
-                    <button>R$450</button>
+                <div class="double-button">
+                    <button id="valor">R$450</button>
+                    <button id="ver-mais">Ver mais</button>
+                </div>
+            </div>
+
+             <div class="card-servicoProfissa">
+                <div class="icon-sucesso">
+                    <img src="../img/sucesso1.png" alt="icone de sucesso">
+                </div>
+                <div class="desc-servico-usuario">
+                    <h2>Pintura de Parede 4m²</h2>
+                    <p>A parede em questão tem aproximadamente 4 metros de largura e 2,7 metros de altura. Ela é
+                        atualmente de um tom neutro, mas quero transformá-la em um ponto de destaque na sala...
+                        <strong>Ver mais detalhes</strong>
+                    </p>
+                </div>
+                <div class="double-button">
+                    <button id="valor">R$450</button>
+                    <button id="ver-mais">Ver mais</button>
+                </div>
+            </div>
+
+             <div class="card-servicoProfissa">
+                <div class="icon-sucesso">
+                    <img src="../img/sucesso1.png" alt="icone de sucesso">
+                </div>
+                <div class="desc-servico-usuario">
+                    <h2>Pintura de Parede 4m²</h2>
+                    <p>A parede em questão tem aproximadamente 4 metros de largura e 2,7 metros de altura. Ela é
+                        atualmente de um tom neutro, mas quero transformá-la em um ponto de destaque na sala...
+                        <strong>Ver mais detalhes</strong>
+                    </p>
+                </div>
+                <div class="double-button">
+                    <button id="valor">R$450</button>
+                    <button id="ver-mais">Ver mais</button>
                 </div>
             </div>
         </div>
     </div>
 
-
-    <script src="cordova.js">
-    </script>
-    <script src="js/index.js">
-    </script>
+<script src="../js/index.js"></script>
 </body>
 </html>

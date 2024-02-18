@@ -239,6 +239,7 @@ h2 {
 
 .card-servicoProfissa h2 {
     font-size: 1.4rem;
+    margin-bottom: 3.5vh;
 }
 
 .card-servicoProfissa p {
@@ -253,6 +254,7 @@ border-radius: 10px;
 width: 52vw;
 padding-left: 0px;
 padding-top: 0px;
+padding-right: 0px;
 display: flex;
 justify-content: flex-start;
 }
@@ -363,6 +365,38 @@ width: 7vw;
 height: 5vh;
 font-size: 1.1rem;
 border: none;
+}
+
+.card-servicoProfissa .double-button {
+width: 25vw;
+height: 20vh;
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+}
+
+.card-servicoProfissa .double-button #ver-mais {
+    width: 7vw;
+    height: 7vh;
+    border-radius: 20px;
+    border: none ;
+    background-color: #3cbc8c;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    align-self: center;
+}
+
+.card-servicoProfissa .double-button #valor {
+    width: 7vw;
+    height: 7vh;
+    border-bottom-left-radius: 40px;
+    border: none ;
+    background-color: #3cbc8c;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    border-top-right-radius: 10px;
 }
 
 .card-servicoProfissa .chat-cancelar #cancelar {
