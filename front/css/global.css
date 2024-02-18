@@ -280,7 +280,7 @@ margin: 8px;
 
 .card-servicoProfissa .desc-servico-usuario {
     width: 25vw;
-    margin: 10px;
+    margin: 15px;
     display: flex;
     flex-direction: column;
     }
@@ -342,10 +342,19 @@ align-items: center;
 .card-servicoProfissa .chat-cancelar {
 display: flex;
 justify-content: space-between;
-width: 30vw;
+width: 35vw;
 align-items: flex-end;
 height: 7vh;
 }
+
+.card-servicoProfissa .chat-cancelar #finalizar {
+    background-color: var(--verde);
+    color: white;
+    width: 7vw;
+    height: 5vh;
+    font-size: 1.1rem;
+    border: none;
+    }
 
 .card-servicoProfissa .chat-cancelar #chat {
 background-color: var(--verde);
@@ -376,3 +385,4 @@ border: none;
 .content-midia .sessao-cards h1 {
 font-size: 1.5rem;
 }
+
