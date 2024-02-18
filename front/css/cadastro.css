@@ -47,6 +47,10 @@ body {
     }
 }
 
+.forms .formProfi{
+    display: none;
+}
+
 .campos {
     display: flex;
    justify-content: center;
