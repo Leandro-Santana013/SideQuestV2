@@ -387,6 +387,10 @@ align-items: flex-end;
     align-self: center;
 }
 
+.card-servicoProfissa .double-button a{
+    align-self: center;
+}
+
 .card-servicoProfissa .double-button #valor {
     width: 7vw;
     height: 7vh;

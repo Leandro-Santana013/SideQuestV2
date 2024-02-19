@@ -24,7 +24,7 @@ font-size: 2rem;
 display: flex;
 justify-content: space-between;
 width: 35vw;
-margin: 10px;
+margin-bottom: 10px;
 }
 
 .cabecalho-pedido .preco-pedido button {
@@ -37,6 +37,15 @@ border-radius: 20px;
 font-size: 1.10rem;
 }
 
+.cabecalho-pedido .preco-pedido #btn-preco {
+    background-color: var(--verde);
+    color: white;
+    border: none;
+    width: 10.5vw;
+    height: 5.5vh;
+    border-radius: 20px;
+    font-size: 1.10rem;
+    }
 
 
 /*Fim do cabeçalho e início da descrição do serviço*/
@@ -55,14 +64,50 @@ gap: 10px;
 
 .descricao .btn-Usuario button {
 margin: 10px;
-width: 8.5vw;
 height: 5vh;
 border: none;
 background-color: var(--verde);
 color: white;
 font-size: 1.10rem;
 border-radius: 5px;
+font-weight: bolder;
 }
+
+.descricao .btn-Usuario #btn-verde {
+    margin: 10px;
+    width: 8.5vw;
+    height: 5vh;
+    border: none;
+    background-color: var(--verde);
+    color: white;
+    font-size: 1.10rem;
+    border-radius: 5px;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    }
+
+    .descricao .btn-Usuario img {
+    width: 1.5vw;
+    height: 2.5vh;
+    } 
+
+.descricao .btn-Usuario #excluir {
+    margin: 10px;
+    width: 8.5vw;
+    height: 5vh;
+    border: none;
+    background-color: white;
+    color: red;
+    font-size: 1.10rem;
+    border-radius: 5px;
+    border: 1px solid red;
+    font-weight: bolder;    
+}
+
+
 
 .descricao .btn-Usuario .usuario-desc {
 display: flex;

@@ -78,9 +78,9 @@ router.get('/confirmarEmail', (req, res) => {
     }
 });
 
-router.get('/visualizarServico', (req, res) => {
+router.get('/visualizarServicoProfissional', (req, res) => {
   if(req.session.connected){
-    res.render("vizualizarServico");
+    res.render("vizualizarServicoProfissional");
     } else {
       res.redirect("login");
       req.session.destroy;
@@ -105,6 +105,10 @@ router.get('/servicosAtivosProfissional', (req, res) => {
 
 router.get('/servicosPendentesCliente', (req, res) => {
   res.render("servicosPendentesCliente");
+});
+
+router.get('/visualizarServicoCliente', (req, res) => {
+  res.render("visualizarServicoCliente");
 });
 
 module.exports = router;  
